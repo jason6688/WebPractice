@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "WebPractice/router"
 	"fmt"
 	"net/http"
 )
@@ -15,5 +16,5 @@ func main() {
 	//	}
 	http.HandleFunc("/", Home)
 	http.ListenAndServe(":8000", nil)
-	fmt.Println("Hello Web")
+	//fmt.Println("Hello Web")
 }

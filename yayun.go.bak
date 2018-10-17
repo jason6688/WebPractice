@@ -1,0 +1,10 @@
+package yayun
+
+import "net/http"
+
+type Yayun struct {
+}
+
+func (yy *Yayun) Router(router, handleFunc string) {
+	http.http.HandleFunc(router, handleFunc)
+}
